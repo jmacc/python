@@ -23,3 +23,7 @@ print("abcd" > "e") #10rden alfabetico
 
 print(5 > 5 and 3 > 6)
 print(5 > 5 or 3 > 6)
+
+
+x=input("Ingresa un valor logico: ")
+print and(x)
