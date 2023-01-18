@@ -48,7 +48,7 @@ while not (fin):
     elif (opc == 6): #Diferencia
         dif1 = float(input("ingresa el primer valor "))
         dif2 = float(input("ingresa el segundo valor "))
-        if com1 == com2:
+        if dif1 == dif2:
             print("El varlo1: "+str(dif1)+" es igual a valor2: ",str(dif2))
         else:
             print("El varlo1: "+str(dif1)+" es diferente a valor2: ",str(dif2))
