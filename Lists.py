@@ -11,7 +11,7 @@ print(my_list)
 print("Longitud de la lista")
 print(len(my_list))
 
-my_other_list = [34,56,4,"Jose","Bien"]
+my_other_list = [34,56,4,"Jose","Bien",56,89,45,23]
 print("Tipo de dato")
 print(type(my_other_list))
 
@@ -20,6 +20,10 @@ print(my_other_list[1])
 print(my_other_list[0])
 print(my_other_list[-1])
 #print(my_other_list[-5])#IndexError
+
+#reordenamiento de lista en reversa
+my_other_list.reverse()
+print(my_other_list)
 
 print("Append")
 my_other_list.append("perico")
@@ -31,10 +35,10 @@ print(my_other_list)
 
 ''' 
 print("Remove")
-my_other_list.remove(1) #generar el error
+my_other_list.remove((1)) #generar el error
 print(my_other_list)
 '''
-
+#Elimina un valor conocido
 print("Remove 2")
 my_other_list.remove("insertando")
 print(my_other_list)
@@ -42,6 +46,9 @@ print(my_other_list)
 print("Pop")
 my_other_list.pop()
 print(my_other_list)
+
+#Elimina por indice
+del my_other_list[1]
 
 
 
