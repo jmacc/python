@@ -31,3 +31,9 @@ age = input("¡Cuantos años tienes?")
 
 print (name)
 print (age)
+
+#formateo
+name1, surname1, age1 = "Jose","Mario",12
+print("Mi nombre es {} {} y mi edad es {}".format(surname1,name1,age1))
+print("Mi nombre es %s %s y mi edad es %d " %(surname1,name1,age1))
+
