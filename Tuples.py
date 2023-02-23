@@ -9,3 +9,7 @@ print(type(my_tuple))
 
 print(my_tuple[0])
 print(my_tuple[-1])
+#Identifica si existe el dato
+print(my_tuple.count("Perico"))
+#Identifica su posicion
+print(my_tuple.index("Lineas"))
