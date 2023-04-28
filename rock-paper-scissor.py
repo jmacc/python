@@ -13,7 +13,7 @@ class Participant:
 # Inicia Juego
 class Decoration:
     def __init__(self):
-            self.deco = print(('**********'))
+            self.deco = print(x = 7 * "*")
             self.welcome = print("Bienvenido:\n")
             
 class gameRound:
