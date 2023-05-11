@@ -202,9 +202,44 @@ for i in range(2, 1):
 else:
     print("else:", i)
 ##############################################
-"""
+
 #La piramide
 blocks = int(input("Ingresa el número de bloques: "))
 for i in range(blocks):
-    print(i)
+    espacios = blocks - i - 1
+    asteriscos = 1 + i *2
+    print(" " * espacios + "*" * asteriscos)    
 #print("La altura de la pirámide:", height)
+
+##############################################
+"""
+#LA HIPOTESIS DE LOTHAR COLLATZ
+
+c0 = -1
+
+while c0 <= 0 :
+   valor = input("Ingresa un valor entero: ")
+   if valor.isdigit():
+       c0 = int(valor)
+       if c0 > 0:
+        print("Seguimos: ",c0)
+        if c0 % 2 == 0:
+            print("El {} es par".format(c0))
+            operacion = c0 /2
+            print(operacion) #el valor de la operacion
+            if operacion == 1:
+                break
+            else:
+               c0 = operacion
+            
+        else:
+            print("El {} es impart".format(c0))
+            operacion = (c0*3)+1
+            print(operacion) #el valor de la operacion
+            if operacion == 1:
+                break
+            else:
+               c0 = operacion
+            
+   else:
+       print("Valor inválido, intenta de nuevo.")
