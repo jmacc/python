@@ -214,32 +214,28 @@ for i in range(blocks):
 ##############################################
 """
 #LA HIPOTESIS DE LOTHAR COLLATZ
-
+'''
+Para todo numero entero positivo:
+    - si es par se divide entre 2
+    - Si es impart se multiplica por 3 y se suma 1
+    - Llevando a cabos operaciones sobre el numero resultante, 
+    como resultado final siempre se alzanza el numero 1
+'''
+sec = []
 c0 = -1
-
-while c0 <= 0 :
-   valor = input("Ingresa un valor entero: ")
-   if valor.isdigit():
-       c0 = int(valor)
-       if c0 > 0:
-        print("Seguimos: ",c0)
-        if c0 % 2 == 0:
-            print("El {} es par".format(c0))
-            operacion = c0 /2
-            print(operacion) #el valor de la operacion
-            if operacion == 1:
-                break
-            else:
-               c0 = operacion
-            
-        else:
-            print("El {} es impart".format(c0))
-            operacion = (c0*3)+1
-            print(operacion) #el valor de la operacion
-            if operacion == 1:
-                break
-            else:
-               c0 = operacion
-            
-   else:
-       print("Valor inválido, intenta de nuevo.")
+while c0 <= 0: #mientras sea positivo
+    valor = input("Ingresa un valor entero: ")
+    if valor.isdigit():  # si es numero
+        c0 = int(valor)  # si es un numero entero
+        if c0 > 0:  # si es mayor a cero
+            print("Los valores de : ", c0)
+            sec.append(c0) #agregamos el valor ingresado a la lista
+            while c0 > 1: #ciclo de la operacion
+                if c0 % 2 == 0:
+                    c0 = c0 // 2
+                    sec.append(c0)#agregafmos cada valor a la lista
+                else:
+                    c0 = (c0*3)+1
+                    sec.append(c0)
+        print(sec)
+        print("La cantidad de pasos fueron: ",len(sec)) #obtenemos la cantidad de elementos de la lista
