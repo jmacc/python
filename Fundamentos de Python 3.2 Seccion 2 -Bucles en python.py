@@ -212,7 +212,7 @@ for i in range(blocks):
 #print("La altura de la pirámide:", height)
 
 ##############################################
-"""
+
 #LA HIPOTESIS DE LOTHAR COLLATZ
 '''
 Para todo numero entero positivo:
@@ -239,3 +239,82 @@ while c0 <= 0: #mientras sea positivo
                     sec.append(c0)
         print(sec)
         print("La cantidad de pasos fueron: ",len(sec)) #obtenemos la cantidad de elementos de la lista
+        
+##############################################
+
+text = "pyxpyxpyx"
+for letter in text:
+    if letter == "x":
+        continue
+    print(letter, end="")
+##############################################
+
+n = 0
+ 
+while n != 3:
+    print(n)
+    n += 1
+else:
+    print(n, "else")
+ 
+print()
+ 
+for i in range(0, 3):
+    print(i)
+else:
+    print(i, "else")
+##############################################
+
+for i in range(6, 1,-1):
+    print(i, end=" ")  # si pongo -2 output: 6, 4, 2
+##############################################
+
+#Quiz un bucle for que cuente de 0 a 10, e imprima números impares en la pantalla
+for i in range(0, 11):
+    if i % 2 != 0:
+        print(i)
+##############################################
+
+#Quiz     bucle while que cuente de 0 a 10, e imprima números impares en la pantalla
+x = 1
+while x < 11:
+    if x % 2 != 0:
+        print(x)
+    x += 1
+##############################################
+
+#Quiz  programa con un bucle for y una sentencia break. 
+# El programa debe iterar sobre los caracteres en una dirección de correo electrónico,
+# salir del bucle cuando llegue al símbolo @ e imprimir la parte antes de @ en una línea
+for ch in "john.smith@pythoninstitute.org":
+    if ch == "@":
+        break
+    print(ch, end="")
+##############################################
+
+#Quiz un bucle for y una sentenciacontinue. El programa debe iterar sobre una cadena de dígitos,
+# reemplazar cada 0 con x, e imprimir la cadena modificada en la pantalla.
+for digit in "0165031806510":
+    if digit == "0":
+        print("x", end="")
+        continue
+    print(digit, end="")
+##############################################
+
+n = 3
+ 
+while n > 0:
+    print(n + 1)
+    n -= 1
+else:
+    print(n)
+##############################################
+
+n = range(4)
+ 
+for num in n:
+    print(num - 1)
+else:
+    print(num)
+##############################################
+"""
