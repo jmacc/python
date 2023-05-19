@@ -76,6 +76,11 @@ def Calculadora():
                 elif (opc == 6): #Diferencia
                     Diferencia()
                     continue
+                elif (opc == 7): #Sale
+                    #Formas de Salir
+                    quit()
+                    #exit()
+                    #sys.exit("weight less than 80") hay que importar sys 
                 else: #Sale de codigo
                     print("No existe la opcion")
                     fin = True  
