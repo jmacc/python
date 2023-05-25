@@ -80,7 +80,7 @@ for i in range(len(my_list)):
 
 print(total)
 ##############################################
-"""
+
 my_list = [10, 1, 8, 3, 5]
 total = 0
 
@@ -88,3 +88,38 @@ for i in my_list:
     total += i
  
 print(total)
+##############################################
+"""
+"""
+Escribe un programa que refleje estos cambios y le permita practicar con el concepto de listas.
+Tu tarea es:
+
+paso 1: crea una lista vacía llamada beatles;
+paso 2: emplea el método append() para agregar los siguientes miembros de la banda a la lista: John Lennon, Paul McCartney y George Harrison;
+paso 3: emplea el buclefor y el append() para pedirle al usuario que agregue los siguientes miembros de la banda a la lista: Stu Sutcliffe, y Pete Best;
+paso 4: usa la instrucción del para eliminar a Stu Sutcliffe y Pete Best de la lista;
+paso 5: usa el método insert() para agregar a Ringo Starr al principio de la lista.
+Por cierto, ¿eres fan de los Beatles? (Los Beatles son una de las bandas favoritas de Greg. Pero espera...¿Quién es Greg?)
+"""
+# paso 1
+beatles = []
+beatles_add = ["John Lennon", "Paul McCartney "," George Harrison"]
+paso_3_0 = "Stu Sutcliffe"
+paso_3_1 ="Pete Best"
+paso_3_2 ="Ringo Starr"
+print("Paso 1:", beatles)
+beatles.extend(beatles_add) #nos permite agrupar listas
+print("Paso 2:", beatles)
+for name in ["Stu Sutcliffe", "Pete Best"]:
+    add = input("¿Deseas agregar a {}? s/n: ".format(name))
+    if add == "s":
+        beatles.append(name)
+        print("La lista queda asi:", beatles)
+    else:
+        print("La lista queda asi:", beatles)
+print("Eliminamos los Siguientes elementos  Stu Sutcliffe y Pete Best")
+beatles.remove(paso_3_0)
+beatles.remove(paso_3_1)
+print("Al eliminar queda asi:", beatles)
+beatles.insert(0,paso_3_2)
+print("Al insertar al principio de las lista queda asi:", beatles)
