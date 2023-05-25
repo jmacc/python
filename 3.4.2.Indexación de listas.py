@@ -89,8 +89,8 @@ for i in my_list:
  
 print(total)
 ##############################################
-"""
-"""
+
+'''
 Escribe un programa que refleje estos cambios y le permita practicar con el concepto de listas.
 Tu tarea es:
 
@@ -100,7 +100,7 @@ paso 3: emplea el buclefor y el append() para pedirle al usuario que agregue los
 paso 4: usa la instrucción del para eliminar a Stu Sutcliffe y Pete Best de la lista;
 paso 5: usa el método insert() para agregar a Ringo Starr al principio de la lista.
 Por cierto, ¿eres fan de los Beatles? (Los Beatles son una de las bandas favoritas de Greg. Pero espera...¿Quién es Greg?)
-"""
+'''
 # paso 1
 beatles = []
 beatles_add = ["John Lennon", "Paul McCartney "," George Harrison"]
@@ -123,3 +123,43 @@ beatles.remove(paso_3_1)
 print("Al eliminar queda asi:", beatles)
 beatles.insert(0,paso_3_2)
 print("Al insertar al principio de las lista queda asi:", beatles)
+##############################################
+
+my_list = [1, None, True, 'Soy una cadena', 256, 0]
+print(my_list[3])  # output: Soy una cadena
+print(my_list[-1])  # output: 0
+ 
+my_list[1] = '?'
+print(my_list)  # output: [1, '?', True, 'Soy una cadena', 256, 0]
+ 
+my_list.insert(0, "primero")
+my_list.append("último")
+print(my_list)  # output: ['primero', 1, '?', True, 'Soy una cadena', 256, 0, 'último']
+
+##############################################
+
+my_list = [1, 2, 3, 4]
+del my_list[2]
+print(my_list)  # output: [1, 2, 4]
+ 
+del my_list  # borra la lista entera
+
+##############################################
+
+my_list = ["blanco", "purpura", "azul", "amarillo", "verde"]
+ 
+for color in my_list:
+    print(color)
+
+##############################################
+my_list = ["blanco", "purpura", "azul", "amarillo", "verde"]
+print(len(my_list))  # output 5
+ 
+del my_list[2]
+print(len(my_list))  # output 4
+
+##############################################
+"""
+lst = [1, [2, 3], 4]
+print(lst[1])
+print(len(lst))
