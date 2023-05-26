@@ -49,4 +49,17 @@ print(my_list) #[10, 4, 2]
 my_list = [10, 8, 6, 4, 2]
 del my_list[:]
 print(my_list)  #[]
+'''
+El primero de ellos (in) verifica si un elemento dado (el argumento izquierdo) 
+está actualmente almacenado en algún lugar dentro de la lista (el argumento derecho) - el operador devuelve
+True en este caso.
+
+El segundo (not in) comprueba si un elemento dado (el argumento izquierdo) e
+stá ausente en una lista - el operador devuelve True en este caso.
+'''
+my_list = [0, 3, 12, 8, 2]
+
+print(5 in my_list) #false
+print(5 not in my_list) #true
+print(12 in my_list) #true
 
