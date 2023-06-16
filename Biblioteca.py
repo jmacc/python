@@ -11,17 +11,16 @@ class Libro:
     def __init__(self,titulo, isbn):
         self.Titulo = titulo
         self.Isbn = isbn
-        self.Autores = []
         
     def AnadirAutor(self,autor):
-        self.Autores.append(autor)
+        self.Autores = autor
         
 #Mostramos el libro almacenado        
     def MostrarLibro(self):
         print("---------LIBRO-------")
         print("Titulo:",self.Titulo)
         print("ISBN:",self.Isbn)
-        Autor.MostrarAutores(self)
+        Autor.MostrarAutores(self.Autores)
         print("---------------------")
         
     def ObtenerTitulo(self):
@@ -39,10 +38,10 @@ class Biblioteca:
         self.ListaLibros = self.ListaLibros+[libro]
 # Mostramos lo que ya esta guardado
     def MostrarlibrosBiblioteca(self):
-        print("-------------LIBRO--------------------")
+        print("-------------LIBRO---------------")
         for i in self.ListaLibros:
-            i.MostrarLibro()
-        print("--------------------------------------")
+            Libro.MostrarLibro(i)
+        print("---------------------------------")
 #Eliminados el Libro elegido
     def BorrarLibro(self,titulo):
         encontrado = False
