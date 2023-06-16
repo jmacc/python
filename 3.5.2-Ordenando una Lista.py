@@ -48,7 +48,7 @@ lst.sort()
  
 print(lst) #[1, 2, 3]
 ############################################
-"""
+
 a = "A"
 b = "B"
 c = "C"
@@ -58,3 +58,17 @@ lst = [a, b, c, d]
 lst.reverse()
  
 print(lst)#[' ', 'C', 'B', 'A']
+############################################
+
+list_1 = [1]
+print("Lista_1: ",list_1)
+list_2 = list_1
+print("Lista_2: ",list_2)
+list_1[0] = 2
+print("Lista_1: ",list_1)
+print("Lista_2: ",list_2)
+############################################
+"""
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[0:3]
+print(new_list)
