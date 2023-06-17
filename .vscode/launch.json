@@ -11,8 +11,8 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true,
-            "host": "localhost",
-            "port":5678
+            "host": "127.0.0.1",
+            "port": 5678
         }
     ]
 }
