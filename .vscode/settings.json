@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./1.3-Seccion3_Mod_Paq"
+    ],
+    "python.analysis.autoImportCompletions": true
+}
